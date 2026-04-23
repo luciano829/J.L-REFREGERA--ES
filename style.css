@@ -1,0 +1,29 @@
+.grid-servicos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 40px 20px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 350px; /* Largura fixa para manter o padrão */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.card img, 
+.card video {
+    width: 100%;
+    height: 250px; /* Altura padronizada para alinhar tudo */
+    object-fit: cover; /* Faz a imagem/vídeo preencher o espaço sem distorcer */
+}
+
+.card h3 {
+    padding: 15px;
+    color: #333;
+    font-family: sans-serif;
+}

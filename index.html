@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>J.L REFRIGERAÇÕES DIADEMA - SP</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <style>
+        /* --- RESET E CORES --- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: #fff;
+            color: #333;
+        }
+
+        :root {
+            --azul: #0056b3;
+            --verde-zap: #25d366;
+        }
+
+        /* --- MENU --- */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.85);
+            padding: 15px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .logo {
+            color: white;
+            font-weight: bold;
+            font-size: 1.3rem;
+        }
+
+        .menu-links {
+            list-style: none;
+            display: flex;
+        }
+
+        .menu-links li {
+            margin-left: 20px;
+        }
+
+        .menu-links a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* --- INÍCIO COM A SUA FOTO DE FUNDO (image_0.png) --- */
+        #inicio {
+            position: relative;
+            height: 100vh;
+            /* Tela inteira */
+            width: 100%;
+
+            /* CONFIGURAÇÃO DA FOTO DE FUNDO */
+            background-image: url('./img/img.png.webp');
+            /* <--- NOME DA SUA FOTO AQUI */
+            background-size: cover;
+            /* Cobre a tela toda sem distorcer */
+            background-position: center;
+            /* Centraliza a foto */
+            background-repeat: no-repeat;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        /* Camada escura para o texto ficar legível sobre a foto */
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            /* Preto com 60% de transparência */
+            z-index: 1;
+        }
+
+        .conteudo-inicio {
+            position: relative;
+            z-index: 2;
+            padding: 0 20px;
+        }
+
+        .conteudo-inicio h1 {
+            font-size: clamp(2.5rem, 8vw, 4rem);
+            margin-bottom: 10px;
+        }
+
+        .conteudo-inicio p {
+            font-size: 1.2rem;
+        }
+
+        /* --- SERVIÇOS --- */
+        #servicos {
+            padding: 100px 5%;
+            background: #f9f9f9;
+        }
+
+        .titulo-secao {
+            text-align: center;
+            margin-bottom: 50px;
+            color: var(--azul);
+        }
+
+        .swiper {
+            width: 100%;
+            padding-bottom: 50px;
+        }
+
+        .swiper-slide {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .media-box {
+            width: 100%;
+            height: 250px;
+        }
+
+        .media-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .info-card {
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* --- CONTATO (WHATSAPP) --- */
+        #contato {
+            padding: 100px 5%;
+            text-align: center;
+        }
+
+        .form-contato {
+            max-width: 500px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .form-contato input,
+        .form-contato textarea {
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 100%;
+        }
+
+        .btn-whatsapp {
+            background: var(--verde-zap);
+            color: white;
+            border: none;
+            padding: 15px;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 1.1rem;
+        }
+
+        footer {
+            background: #111;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo"> J.L REFRIGERAÇÕES</div>
+        <ul class="menu-links">
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+    <section id="inicio">
+        <div class="overlay"></div>
+        <div class="conteudo-inicio">
+            <h1> J.L REFRIGERAÇÕES</h1>
+
+        </div>
+    </section>
+
+    <section id="servicos">
+        <h2 class="titulo-secao">Nossos Serviços</h2>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <div class="media-box"><img src="./img/img.png 1.webp" alt="pmoc"></div>
+                    <div class="info-card">
+                        <h3>PMOC</h3>
+                        <p>Plano de Manutenção Operação e Controle.</p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="media-box"><img src="./img/A-limpeza-do-ar-condicionado-.jpg" alt="Limpeza"></div>
+                    <div class="info-card">
+                        <h3>Higienização</h3>
+                        <p>Limpeza profunda.</p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="media-box"><img src="img/manutencao.jpg" alt="Manutenção"></div>
+                    <div class="info-card">
+                        <h3>Conserto</h3>
+                        <p>Carga de gás e reparos.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="media-box"><img src="./img/instalação ar.webp" alt="Instalação"></div>
+                    <div class="info-card">
+                        <h3>Instalação</h3>
+                        <p>Infraestrutura completa.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="media-box"><img src="./img/instalação 2.jpeg" alt="instalação"></div>
+                    <div class="info-card">
+                        <h3>Conserto</h3>
+                        <p>conserto de freezer em Geral .</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+
+    <section id="contato">
+        <h2 class="titulo-secao">Orçamento via WhatsApp</h2>
+        <div class="form-contato">
+            <input type="text" id="nome" placeholder="Seu Nome">
+            <input type="text" id="servico" placeholder="Aparelho ou Problema">
+            <button type="button" onclick="enviarWhats()" class="btn-whatsapp">
+                Solicitar no WhatsApp
+            </button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 J.L REFRIGERAÇÕES</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        // Carrossel
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1, spaceBetween: 20,
+            navigation: { nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" },
+            pagination: { el: ".swiper-pagination", clickable: true },
+            breakpoints: { 768: { slidesPerView: 2 }, 1024: { slidesPerView: 3 } }
+        });
+
+        // WhatsApp
+        function enviarWhats() {
+            const nome = document.getElementById('nome').value;
+            const servico = document.getElementById('servico').value;
+            const numero = "5511951195218"; // Seu número
+            const texto = `Olá Luciano, meu nome é ${nome}. Preciso de orçamento para: ${servico}.`;
+            const link = `https://wa.me/${numero}?text=${texto}`;
+
+            if (nome && servico) {
+                window.open(link, '_blank');
+            } else {
+                alert("Por favor, preencha o nome e o serviço.");
+            }
+        }
+    </script>
+</body>
+
+</html>
