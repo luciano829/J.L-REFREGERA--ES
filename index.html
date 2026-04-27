@@ -291,21 +291,18 @@
             breakpoints: { 768: { slidesPerView: 2 }, 1024: { slidesPerView: 3 } }
         });
 
-       function enviarWhats() {
+    function enviarWhats() {
     const nome = document.getElementById('nome').value;
     const servico = document.getElementById('servico').value;
-    const numero = "5511970409766"; // Seu número
+    const numero = "5511970409766";
 
-    const texto = `Olá Helinaldo, meu nome é ${nome}. Preciso de orçamento para: ${servico}.`;
+    const texto = `Olá, vim pelo site JS Climatização. Nome: ${nome} - Serviço: ${servico}`;
 
     const link = `https://wa.me/${numero}?text=${encodeURIComponent(texto)}`;
 
-    if (nome && servico) {
-        window.open(link, '_blank');
-    } else {
-        alert("Por favor, preencha o nome e o serviço.");
-    }
+    window.location.href = link;
 }
+
         
     </script>
 </body>
