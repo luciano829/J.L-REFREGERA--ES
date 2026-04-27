@@ -1,4 +1,4 @@
-❄️ J.L Refrigerações
+❄️ JS Climatização & Refrigeração Diadema - SP
 
 A J.L Refrigerações é especialista em soluções de climatização e assistência técnica para eletrodomésticos. Atuamos com foco em qualidade, agilidade e satisfação do cliente em serviços de manutenção e instalação.
 🛠️ Nossos Serviços
