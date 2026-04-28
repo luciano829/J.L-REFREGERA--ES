@@ -4,197 +4,204 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- VERIFICAÇÃO GOOGLE -->
+    <meta name="google-site-verification" content="ambrivknO6_eLGqv8O2EzTHMXsVPxwFLGurwAUBVfKg" />
+
     <title>JS Climatização & Refrigeração Diadema - SP</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
 
-    <style>
-        /* --- RESET E CORES --- */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', sans-serif;
-        }
 
-        html {
-            scroll-behavior: smooth;
-        }
 
-        body {
-            background-color: #fff;
-            color: #333;
-        }
+<style>
+    /* --- RESET E CORES --- */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', sans-serif;
+    }
 
-        :root {
-            --azul: #0056b3;
-            --verde-zap: #25d366;
-        }
+    html {
+        scroll-behavior: smooth;
+    }
 
-        /* --- MENU --- */
-        nav {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            background: rgba(0, 0, 0, 0.85);
-            padding: 15px 5%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            z-index: 1000;
-        }
+    body {
+        background-color: #fff;
+        color: #333;
+    }
 
-        .logo {
-            color: white;
-            font-weight: bold;
-            font-size: 1.3rem;
-        }
+    :root {
+        --azul: #0056b3;
+        --verde-zap: #25d366;
+    }
 
-        .menu-links {
-            list-style: none;
-            display: flex;
-        }
+    /* --- MENU --- */
+    nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.85);
+        padding: 15px 5%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 1000;
+    }
 
-        .menu-links li {
-            margin-left: 20px;
-        }
+    .logo {
+        color: white;
+        font-weight: bold;
+        font-size: 1.3rem;
+    }
 
-        .menu-links a {
-            color: white;
-            text-decoration: none;
-        }
+    .menu-links {
+        list-style: none;
+        display: flex;
+    }
 
-        /* --- INÍCIO COM A SUA FOTO DE FUNDO (image_0.png) --- */
-        #inicio {
-            position: relative;
-            height: 100vh;
-            /* Tela inteira */
-            width: 100%;
+    .menu-links li {
+        margin-left: 20px;
+    }
 
-            /* CONFIGURAÇÃO DA FOTO DE FUNDO */
-            background-image: url('./img/img.png.webp');
-            /* <--- NOME DA SUA FOTO AQUI */
-            background-size: cover;
-            /* Cobre a tela toda sem distorcer */
-            background-position: center;
-            /* Centraliza a foto */
-            background-repeat: no-repeat;
+    .menu-links a {
+        color: white;
+        text-decoration: none;
+    }
 
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            text-align: center;
-        }
+    /* --- INÍCIO COM A SUA FOTO DE FUNDO (image_0.png) --- */
+    #inicio {
+        position: relative;
+        height: 100vh;
+        /* Tela inteira */
+        width: 100%;
 
-        /* Camada escura para o texto ficar legível sobre a foto */
-        .overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.6);
-            /* Preto com 60% de transparência */
-            z-index: 1;
-        }
+        /* CONFIGURAÇÃO DA FOTO DE FUNDO */
+        background-image: url('./img/img.png.webp');
+        /* <--- NOME DA SUA FOTO AQUI */
+        background-size: cover;
+        /* Cobre a tela toda sem distorcer */
+        background-position: center;
+        /* Centraliza a foto */
+        background-repeat: no-repeat;
 
-        .conteudo-inicio {
-            position: relative;
-            z-index: 2;
-            padding: 0 20px;
-        }
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-align: center;
+    }
 
-        .conteudo-inicio h1 {
-            font-size: clamp(2.5rem, 8vw, 4rem);
-            margin-bottom: 10px;
-        }
+    /* Camada escura para o texto ficar legível sobre a foto */
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+        /* Preto com 60% de transparência */
+        z-index: 1;
+    }
 
-        .conteudo-inicio p {
-            font-size: 1.2rem;
-        }
+    .conteudo-inicio {
+        position: relative;
+        z-index: 2;
+        padding: 0 20px;
+    }
 
-        /* --- SERVIÇOS --- */
-        #servicos {
-            padding: 100px 5%;
-            background: #f9f9f9;
-        }
+    .conteudo-inicio h1 {
+        font-size: clamp(2.5rem, 8vw, 4rem);
+        margin-bottom: 10px;
+    }
 
-        .titulo-secao {
-            text-align: center;
-            margin-bottom: 50px;
-            color: var(--azul);
-        }
+    .conteudo-inicio p {
+        font-size: 1.2rem;
+    }
 
-        .swiper {
-            width: 100%;
-            padding-bottom: 50px;
-        }
+    /* --- SERVIÇOS --- */
+    #servicos {
+        padding: 100px 5%;
+        background: #f9f9f9;
+    }
 
-        .swiper-slide {
-            background: white;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-        }
+    .titulo-secao {
+        text-align: center;
+        margin-bottom: 50px;
+        color: var(--azul);
+    }
 
-        .media-box {
-            width: 100%;
-            height: 250px;
-        }
+    .swiper {
+        width: 100%;
+        padding-bottom: 50px;
+    }
 
-        .media-box img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
+    .swiper-slide {
+        background: white;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
 
-        .info-card {
-            padding: 20px;
-            text-align: center;
-        }
+    .media-box {
+        width: 100%;
+        height: 250px;
+    }
 
-        /* --- CONTATO (WHATSAPP) --- */
-        #contato {
-            padding: 100px 5%;
-            text-align: center;
-        }
+    .media-box img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 
-        .form-contato {
-            max-width: 500px;
-            margin: 0 auto;
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
+    .info-card {
+        padding: 20px;
+        text-align: center;
+    }
 
-        .form-contato input,
-        .form-contato textarea {
-            padding: 15px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            width: 100%;
-        }
+    /* --- CONTATO (WHATSAPP) --- */
+    #contato {
+        padding: 100px 5%;
+        text-align: center;
+    }
 
-        .btn-whatsapp {
-            background: var(--verde-zap);
-            color: white;
-            border: none;
-            padding: 15px;
-            border-radius: 5px;
-            font-weight: bold;
-            cursor: pointer;
-            font-size: 1.1rem;
-        }
+    .form-contato {
+        max-width: 500px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
 
-        footer {
-            background: #111;
-            color: white;
-            padding: 30px;
-            text-align: center;
-        }
-    </style>
+    .form-contato input,
+    .form-contato textarea {
+        padding: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        width: 100%;
+    }
+
+    .btn-whatsapp {
+        background: var(--verde-zap);
+        color: white;
+        border: none;
+        padding: 15px;
+        border-radius: 5px;
+        font-weight: bold;
+        cursor: pointer;
+        font-size: 1.1rem;
+    }
+
+    footer {
+        background: #111;
+        color: white;
+        padding: 30px;
+        text-align: center;
+    }
+</style>
 </head>
 
 <body>
@@ -291,20 +298,26 @@
             breakpoints: { 768: { slidesPerView: 2 }, 1024: { slidesPerView: 3 } }
         });
 
-    function enviarWhats() {
-    const nome = document.getElementById('nome').value;
-    const servico = document.getElementById('servico').value;
-    const numero = "5511970409766";
+        function enviarWhats() {
+            const nome = document.getElementById('nome').value;
+            const servico = document.getElementById('servico').value;
 
-    const texto = `Olá, vim pelo site JS Climatização. Nome: ${nome} - Serviço: ${servico}`;
+            if (nome === "" || servico === "") {
+                alert("⚠️ Por favor, preencha seu nome e o serviço desejado.");
+                return;
+            }
 
-    const link = `https://wa.me/${numero}?text=${encodeURIComponent(texto)}`;
+            const numero = "5511970409766";
+            const texto = `Olá, vim pelo site JS Climatização.%0A%0A📌 Nome: ${nome}%0A🔧 Serviço: ${servico}`;
 
-    window.location.href = link;
-}
+            // Abre em nova aba (mais compatível)
+            window.open(`https://wa.me/${numero}?text=${texto}`, '_blank');
+        }
 
-        
+
+
     </script>
+
 </body>
 
 </html>
